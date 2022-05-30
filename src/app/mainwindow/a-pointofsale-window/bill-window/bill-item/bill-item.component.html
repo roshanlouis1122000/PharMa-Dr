@@ -6,7 +6,7 @@
     <!-- <app-add-to-bill></app-add-to-bill> -->
 
     <section class="panel">
-        <p class="panel-heading" style="background-color:hsl(0, 0%, 88%) ;color:hsl(0, 0%, 21%)">
+        <p class="panel-heading" style="background-color:hsl(188deg 82% 80%) ;color:hsl(0, 0%, 21%)">
           Search Drugs
         </p>
         <div class="panel-block ">
@@ -48,7 +48,7 @@
       <ng-template #item >
 
 
-        <div  style="height:470px;" *ngFor="let inventory of inventorys | inventoryFilter: searchTerm">
+        <div  style="height:fit-content;" *ngFor="let inventory of inventorys | inventoryFilter: searchTerm">
           <div class="column is-3-tablet is-6-mobile" style="width: 100%;" >
             <div >
             <div class="card">
@@ -61,14 +61,17 @@
               <div class="card-content">
                 <header class="card-header">
                   <p class="card-header-title">
-                    {{ inventory.name }}
+                  {{ inventory.name }}
                   </p>
 
                 </header>
 
                 <div class="card-content ">
-                  <p class="is-left">{{ inventory.price }}</p>
-                  <input type="number" class="is-center"  style="width: 50%;" name="quantityNumber" ngModel #quantityNumberInput="ngModel"/>
+                  <p class="is-left">Rs: {{ inventory.price }} </p>
+                  <br>
+                  <p class="is-left">Stock:  {{  inventory.quantity  }}</p>
+                  <br>
+                  <input type="number" class="is-center" placeholder="Quantity" style="width: 80%;" name="quantityNumber" ngModel #quantityNumberInput="ngModel"/>
                 </div>
 
                 <footer class="card-footer">
@@ -92,12 +95,12 @@
 
 
   <section class="section columns is-centered" style="margin-top: -4%;">
-    <div class="column is-three-quarters is-full-mobile">
+    <div class="column is-one-quarters is-full-mobile">
       <!-- <app-bill-window></app-bill-window> -->
 
       <section class="panel">
         <form (submit)="onAddToCheckout(itemArray,billForm)" #billForm="ngForm">
-        <p class="panel-heading" style="background-color:hsl(0, 0%, 88%) ;color:hsl(0, 0%, 21%)">
+        <p class="panel-heading" style="background-color:hsl(188deg 82% 80%) ;color:hsl(0, 0%, 21%)">
           Bill
         </p>
         <div class="panel-block ">
@@ -146,7 +149,7 @@
       <!-- <app-check-out-window></app-check-out-window> -->
 
   <section class="panel">
-        <p class="panel-heading" style="background-color:hsl(0, 0%, 88%) ;color:hsl(0, 0%, 21%)">
+        <p class="panel-heading" style="background-color:hsl(188deg 82% 80%);color:hsl(0, 0%, 21%)">
           Check Out
         </p>
       <form (submit)="onPrintBill(total,billForm,dataArray)" #billForm="ngForm">
@@ -198,7 +201,8 @@
           <button class="button is-primary   is-fullwidth"  type="submit" >
             Get Balance
           </button>
-          <button class="button is-primary   is-fullwidth"  (click)="print()">
+          
+          <button class="button is-primary   is-fullwidth"  (click)="print()" style="margin: 10px;">
             Print Bill
           </button>
         </div>
@@ -289,15 +293,23 @@
       display: block;
       padding: 10px;
       }
+      .button{
+        background-color: #673ab7;
+      }
+      .button :hover{
+        background-color: #a2ebf6 !important;
+        color: white !important;
+      }
       .btn{
         width: 100%;
-        color:hsl(0, 0%, 21%);
-        background-color: hsl(0, 0%, 88%);
+        color:black;
+        background-color: #673ab7;
         border-radius: 3px;
       }
+      
       .newclass :hover{
-        background-color: hsl(0, 0%, 21%);
-        color: hsl(0, 0%, 88%);
+        background-color: #a2ebf6 !important;
+        color: white !important;
       }
 
 

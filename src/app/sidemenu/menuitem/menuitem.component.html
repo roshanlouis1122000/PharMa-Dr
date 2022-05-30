@@ -4,33 +4,33 @@
 </p>
 
 <!-- Pharmacist Dashboard -->
-<ul class="menu-list" style="width: 108%;" *ngIf="PharamacistRole">
+<ul class="menu-list" style="width: 108%; background-color: hsl(188deg 83% 80%);" *ngIf="PharamacistRole">
   <li class="newclass :hover" >
-    <a class="btn" routerLink="/" ><span class="icon" style="padding: 9px;"><i class="fa fa-tachometer fa-lg" style="margin-right: 7px;"></i></span>Dashboard</a>
+    <a class="btn" style="background-color: white; color:black ;border: 5px solid #673ab7; border-radius: 30px; margin: 5px;" routerLink="/" ><span class="icon" style="padding: 9px;"><i class="fa fa-user fa-lg" style="margin-right: 7px;"></i></span>Dashboard</a>
   </li>
   <!-- <li class="newclass :hover" >
     <a class="btn" routerLink="/doctororders"><span class="icon"><i class="fa fa-user-md fa-lg " style="margin-right: 7px;"></i></span>Doctor Orders</a>
   </li> -->
   <li class="newclass :hover">
-    <a class="btn" routerLink="/pos"><span class="icon"><i class="fa fa-puzzle-piece fa-lg" style="margin-right: 7px;"></i></span>Bill</a>
+    <a class="btn" style="background-color: white; color:black ;border: 5px solid #673ab7; border-radius: 30px; margin: 5px;" routerLink="/pos"><span class="icon"><i class="fa fa-file-invoice fa-lg" style="margin-right: 7px;"></i></span>Bill</a>
   </li>
   <li class="newclass :hover" >
-    <a class="btn" routerLink="/suppliers"><span class="icon"><i class="fa fa-truck fa-lg" style="margin-right:7px;"></i></span>Suppliers</a>
+    <a class="btn" style="background-color: white; color:black; border: 5px solid #673ab7; border-radius: 30px; margin: 5px;" routerLink="/suppliers"><span class="icon"><i class="fa fa-truck fa-lg" style="margin-right:7px;"></i></span>Suppliers</a>
   </li>
   <!-- <li class="newclass :hover" >
     <a class="btn" routerLink="/predictionreport"><span class="icon"><i class="fa fa-bar-chart-o fa-lg" style="margin-right: 7px;"></i></span>Prediction Report</a>
   </li> -->
   <li class="newclass :hover" >
-    <a class="btn" routerLink="/salesreport"><span class="icon"><i class="fa fa-line-chart fa-lg" style="margin-right: 7px;"></i></span>Sales Report</a>
+    <a class="btn" style="background-color: white; color:black; border: 5px solid #673ab7; border-radius: 30px; margin: 5px;" routerLink="/salesreport"><span class="icon"><i class="fa fa-line-chart fa-lg" style="margin-right: 7px;"></i></span>Sales Report</a>
   </li>
   <li class="newclass :hover">
-    <a class="btn" routerLink="/inventory"><span class="icon"><i class="fa fa-yc-square fa-lg " style="margin-right:7px;"></i></span>Inventory</a>
+    <a class="btn"style="background-color: white; color:black ; border: 5px solid #673ab7; border-radius: 30px; margin: 5px;" routerLink="/inventory"><span class="icon"><i class="fa fa-warehouse fa-lg " style="margin-right:7px;"></i></span>Inventory</a>
   </li>
   <li class="newclass :hover">
-    <a class="btn" routerLink="/expoutofstock"><span class="icon"><i class="fa fa-exclamation-triangle fa-lg" style="margin-right: 7px;"></i></span> Expired</a>
+    <a class="btn"style="background-color: white; color:black ; border: 5px solid #673ab7; border-radius: 30px; margin: 5px;" routerLink="/expoutofstock"><span class="icon"><i class="fa fa-exclamation-triangle fa-lg" style="margin-right: 7px;"></i></span> Expired</a>
   </li>
   <li class="newclass :hover">
-    <a class="btn" routerLink="/outofstock"><span class="icon"><i class="fa fa-exclamation-triangle fa-lg" style="margin-right: 7px;"></i></span> Out of Stock</a>
+    <a class="btn" style="background-color: white; color:black ;border: 5px solid #673ab7; border-radius: 30px; margin: 5px;" routerLink="/outofstock"><span class="icon"><i class="fa fa-exclamation-triangle fa-lg" style="margin-right: 7px;"></i></span> Out of Stock</a>
   </li>
 </ul><br>
 
@@ -38,13 +38,13 @@
 <!-- Assistant Pharmacist Dashboard -->
 <ul class="menu-list" style="width: 108%;" *ngIf="ApharmacistRole">
   <li class="newclass :hover" >
-    <a class="btn assistantPharmacistStyle" routerLink="/" ><span class="icon" style="padding: 9px;"><i class="fa fa-tachometer fa-lg" style="margin-right: 7px;"></i></span>Dashboard</a>
+    <a class="btn assistantPharmacistStyle" routerLink="/" ><span class="icon" style="padding: 9px;"><i class="fa fa-user fa-lg" style="margin-right: 7px;"></i></span>Dashboard</a>
   </li>
   <li class="newclass :hover" >
     <a class="btn assistantPharmacistStyle" routerLink="/doctororders"><span class="icon"><i class="fa fa-user-md fa-lg " style="margin-right: 7px;"></i></span>Doctor Orders</a>
   </li>
   <li class="newclass :hover">
-    <a class="btn assistantPharmacistStyle" routerLink="/pos"><span class="icon"><i class="fa fa-puzzle-piece fa-lg" style="margin-right: 7px;"></i></span>PoS</a>
+    <a class="btn assistantPharmacistStyle" routerLink="/pos"><span class="icon"><i class="fa fa-file-invoice fa-lg" style="margin-right: 7px;"></i></span>Bill</a>
   </li>
   <li class="newclass :hover" >
     <a class="btn assistantPharmacistStyle" routerLink="/suppliers"><span class="icon"><i class="fa fa-truck fa-lg" style="margin-right:7px;"></i></span>Suppliers</a>
@@ -56,7 +56,7 @@
     <a class="btn assistantPharmacistStyle" routerLink="/salesreport"><span class="icon"><i class="fa fa-line-chart fa-lg" style="margin-right: 7px;"></i></span>Sales Report</a>
   </li>
   <li class="newclass :hover">
-    <a class="btn assistantPharmacistStyle" routerLink="/inventory"><span class="icon"><i class="fa fa-yc-square fa-lg " style="margin-right:7px;"></i></span>Inventory</a>
+    <a class="btn assistantPharmacistStyle" routerLink="/inventory"><span class="icon"><i class="fa fa-warehouse fa-lg " style="margin-right:7px;"></i></span>Inventory</a>
   </li>
   <li class="newclass :hover">
     <a class="btn assistantPharmacistStyle" routerLink="/expoutofstock"><span class="icon"><i class="fa fa-exclamation-triangle fa-lg" style="margin-right: 7px;"></i></span> Expired</a>
@@ -70,13 +70,13 @@
 <!-- Cashier Dashboard -->
 <ul class="menu-list" style="width: 108%;" *ngIf="CashierRole">
   <li  class="newclass :hover" >
-    <a class="btn cashierStyle" routerLink="/" ><span class="icon" style="padding: 9px;"><i class="fa fa-tachometer fa-lg" style="margin-right: 7px;"></i></span>Dashboard</a>
+    <a class="btn cashierStyle" style="background-color: white; color:black ; border: 5px solid #673ab7; border-radius: 30px; margin: 5px;" routerLink="/" ><span class="icon" style="padding: 9px;"><i class="fa fa-user fa-lg" style="margin-right: 7px;"></i></span>Dashboard</a>
   </li>
   <li class="newclass :hover" >
-    <a class="btn cashierStyle" routerLink="/doctororders"><span class="icon"><i class="fa fa-user-md fa-lg " style="margin-right: 7px;"></i></span>Doctor Orders</a>
+    <a class="btn cashierStyle"  style="background-color: white; color:black ; border: 5px solid #673ab7; border-radius: 30px; margin: 5px;" routerLink="/doctororders"><span class="icon"><i class="fa fa-user-md fa-lg " style="margin-right: 7px;"></i></span>Doctor Orders</a>
   </li>
   <li class="newclass :hover">
-    <a class="btn cashierStyle" routerLink="/pos"><span class="icon"><i class="fa fa-puzzle-piece fa-lg" style="margin-right: 7px;"></i></span>PoS</a>
+    <a class="btn cashierStyle" style="background-color: white; color:black ; border: 5px solid #673ab7; border-radius: 30px; margin: 5px;" routerLink="/pos"><span class="icon"><i class="fa fa-file-invoice fa-lg" style="margin-right: 7px;"></i></span>Bill</a>
   </li>
   <!-- <li class="newclass :hover" >
     <a class="btn" routerLink="/suppliers"><span class="icon"><i class="fa fa-truck fa-lg" style="margin-right:7px;"></i></span>Suppliers</a>
@@ -88,19 +88,19 @@
     <a class="btn" routerLink="/salesreport"><span class="icon"><i class="fa fa-line-chart fa-lg" style="margin-right: 7px;"></i></span>Sales Report</a>
   </li> -->
   <li class="newclass :hover">
-    <a class="btn cashierStyle" routerLink="/inventory"><span class="icon"><i class="fa fa-yc-square fa-lg " style="margin-right:7px;"></i></span>Inventory</a>
+    <a class="btn cashierStyle" style="background-color: white; color:black ; border: 5px solid #673ab7; border-radius: 30px; margin: 5px;" routerLink="/inventory"><span class="icon"><i class="fa fa-warehouse fa-lg " style="margin-right:7px;"></i></span>Inventory</a>
   </li>
   <li class="newclass :hover">
-    <a class="btn cashierStyle" routerLink="/expoutofstock"><span class="icon"><i class="fa fa-exclamation-triangle fa-lg" style="margin-right: 7px;"></i></span> Expired</a>
+    <a class="btn cashierStyle" style="background-color: white; color:black ; border: 5px solid #673ab7; border-radius: 30px; margin: 5px;" routerLink="/expoutofstock"><span class="icon"><i class="fa fa-exclamation-triangle fa-lg" style="margin-right: 7px;"></i></span> Expired</a>
   </li>
   <li class="newclass :hover">
-    <a class="btn cashierStyle" routerLink="/outofstock"><span class="icon"><i class="fa fa-exclamation-triangle fa-lg" style="margin-right: 7px;"></i></span> Out of Stock</a>
+    <a class="btn cashierStyle" style="background-color: white; color:black ; border: 5px solid #673ab7; border-radius: 30px; margin: 5px;" routerLink="/outofstock"><span class="icon"><i class="fa fa-exclamation-triangle fa-lg" style="margin-right: 7px;"></i></span> Out of Stock</a>
   </li>
 </ul><br>
 
 
 <p class="menu-label" *ngIf="!userIsAuthenticated" style="color: azure; padding-top: 5%;padding-left: 5%;padding-right: 5%; text-align: center;">
-  Some admin functionalities <br> may not be accessible
+  Some  functionalities <br> may not be accessible until u login
 </p>
 
 <style>
@@ -118,6 +118,10 @@
       background-color: hsl(0, 0%, 21%);
       border-radius: 3px;
       height: 88px;
+    }
+    .btn:hover{
+      background-color: #673ab7 !important ; 
+      color: white !important;
     }
     .newclass :hover{
       background-color: HSL(171, 100%, 40%);

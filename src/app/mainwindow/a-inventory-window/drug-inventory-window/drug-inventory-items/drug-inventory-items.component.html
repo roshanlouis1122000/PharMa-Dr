@@ -67,8 +67,8 @@
                     <td >{{ inventory.price }} </td>
 
                     <td class="level-right">
-                      <a class="button is-small is-primary" style="font-weight: bold;margin-right: 1%;" [routerLink]="['/editi',inventory.id]">Edit </a>
-                      <button class="button is-small is-danger" style="font-weight: bold;" (click)="onDelete(inventory.id)" >Delete</button>
+                      <a class="button is-small is-primary" style="font-weight: bold;margin-right: 1%; background-color: dodgerblue; color: black;" [routerLink]="['/editi',inventory.id]">Edit </a>
+                      <button class="button is-small is-danger" style="font-weight: bold; color: black; margin: 5px;" (click)="onDelete(inventory.id)" >Delete</button>
                     </td>
 
                   </tbody>
@@ -98,7 +98,7 @@
       .btn{
         width: 100%;
         color:hsl(0, 0%, 21%);
-        background-color: hsl(0, 0%, 88%);
+        background-color: hsl(188deg 82% 80%) ;
         border-radius: 3px;
       }
       .newclass :hover{

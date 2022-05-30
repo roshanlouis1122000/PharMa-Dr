@@ -8,7 +8,7 @@
           <input class="input" type="text" placeholder="Find suppliers by name" [(ngModel)]="searchTerm">
         </div>
         <div class="control">
-          <a class="button is-primary">
+          <a class="button is-primary" style="background-color: #673ab7;">
             Search
           </a>
         </div>
@@ -34,10 +34,10 @@
           <div class="configure-core"></div>
         </div>
       </div>
-        <div *ngIf="!isLoading">
+        <div *ngIf="!isLoading" >
         <tr  *ngFor="let supplier of suppliers | supplierFilter: searchTerm" >
           <div class="div columns  is-full btn r" style="width: 135%;" >
-              <div class="div column" >
+              <div class="div column" style="background-color: #a2ebf64a;">
                 <table class="table is-full" style="width: 100%;">
                   <thead style="font-weight: bold;">
                     <td>SupplierID</td>
@@ -55,8 +55,8 @@
                     <td style="width: 20%;">{{ supplier.contact }} </td>
                     <td style="width: 20%;">{{ supplier.drugsAvailable }} </td>
                     <td class="level-right" *ngIf="userIsAuthenticated">
-                      <a class="button is-small is-primary" style="font-weight: bold;margin-right: 1%;" [routerLink]="['/edit',supplier.id]">Edit </a>
-                      <button class="button is-small is-danger" style="font-weight: bold;" (click)="onDelete(supplier.id)" >Delete</button>
+                      <a class="button is-small is-primary" style="font-weight: bold;margin-right: 1%; background-color: dodgerblue; color: black;" [routerLink]="['/edit',supplier.id]">Edit </a>
+                      <button class="button is-small is-danger" style="font-weight: bold; color: black; margin: 5px;" (click)="onDelete(supplier.id)" >Delete</button>
                     </td>
 
                   </tbody>

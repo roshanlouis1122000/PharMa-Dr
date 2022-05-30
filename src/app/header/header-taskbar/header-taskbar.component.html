@@ -13,16 +13,16 @@
 
 
     <div class="buttons">
-      <button class="button is-light" routerLink="/doctorLogin">
+      <button class="button is-light" routerLink="#">
         Search
       </button>
-      <button *ngIf="!userIsAuthenticated" class="button is-primary"  routerLink="/login">
+      <button *ngIf="!userIsAuthenticated" class="button is-primary" style="background-color:#673ab7;"  routerLink="/login">
         <strong>Log in as Admin</strong>
       </button>
-      <button *ngIf="userIsAuthenticated" class="button is-primary" (click)="onLogout()" >
+      <button *ngIf="userIsAuthenticated" style="background-color:#673ab7;" class="button is-primary" (click)="onLogout()" >
         <strong>Log out</strong>
       </button>
-      <button *ngIf="PharamacistRole" class="button is-primary is-rounded"  >
+      <button *ngIf="PharamacistRole" class="button is-primary is-rounded"  style="background-color:#673ab7;">
         <strong><span class="icon"><i class="fa fa-cogs fa-lg "  routerLink="/settings"></i></span></strong>
       </button>
     </div>

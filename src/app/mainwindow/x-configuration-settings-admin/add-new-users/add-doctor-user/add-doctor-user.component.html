@@ -14,7 +14,7 @@
 
           <input formControlName="name" class="input is-medium" type="name" placeholder="User Name" autofocus="" required >
           <span class="error-msg" *ngIf="(registerFormControl.name.touched ) && registerFormControl.name.errors?.required">
-            *Drugs Available number is required
+           
           </span>
       </div>
   </div>
@@ -25,9 +25,9 @@
         <p class=" is-left" >Role of the user</p><br>
 
         <mat-radio-group required formControlName="role" class="is-left">
-          <mat-radio-button value="pharmacist">Pharmacist</mat-radio-button><br>
-          <mat-radio-button value="assistantPharmacist">Assistant Pharmacist</mat-radio-button><br>
-          <mat-radio-button value="cashier">Cashier</mat-radio-button><br>
+          <!-- <mat-radio-button value="pharmacist">Pharmacist</mat-radio-button><br> -->
+          <!-- <mat-radio-button value="assistantPharmacist">Assistant Pharmacist</mat-radio-button><br> -->
+          <mat-radio-button value="cashier">Employee</mat-radio-button><br>
         </mat-radio-group>
         <span class="error-msg" *ngIf="(registerFormControl.role.touched ) && registerFormControl.role.errors?.required">
           *Drugs Available number is required
@@ -84,7 +84,7 @@
 
 <br>
 
-      <button  class="button is-block is-primary is-medium is-fullwidth" type="submit">SignUp User</button>
+      <button  class="button is-block is-primary is-medium is-fullwidth" type="submit" style="background-color: hsl(262deg 52% 47%);">SignUp User</button>
   </form>
 
 
